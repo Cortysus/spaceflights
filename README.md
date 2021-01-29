@@ -15,6 +15,18 @@ In order to get the best out of the template:
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
 
+## How to download the data
+
+Run the following command in a Unix terminal:
+```
+# reviews
+wget -O data/01_raw/reviews.csv https://quantumblacklabs.github.io/kedro/reviews.csv
+# companies
+wget -O data/01_raw/companies.csv https://quantumblacklabs.github.io/kedro/companies.csv
+# shuttles
+wget -O data/01_raw/shuttles.xlsx https://quantumblacklabs.github.io/kedro/shuttles.xlsx
+```
+
 ## How to install dependencies
 
 Declare any dependencies in `src/requirements.txt` for `pip` installation and `src/environment.yml` for `conda` installation.
