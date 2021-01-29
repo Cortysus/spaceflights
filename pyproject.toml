@@ -9,6 +9,7 @@ python = ">=3.7,<3.9"
 kedro = "^0.17.0"
 
 [tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
 
 [build-system]
 requires = ["poetry>=0.12"]
