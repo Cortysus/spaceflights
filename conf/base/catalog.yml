@@ -24,3 +24,7 @@ preprocessed_companies:
 preprocessed_shuttles:
   type: pandas.CSVDataSet
   filepath: data/02_intermediate/preprocessed_shuttles.csv
+
+master_table:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/master_table.csv
