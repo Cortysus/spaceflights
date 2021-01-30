@@ -37,6 +37,7 @@ from kedro.versioning import Journal
 
 from spaceflights.pipelines.data_engineering import pipeline as de
 from spaceflights.pipelines.data_science import pipeline as ds
+from spaceflights.pipelines.print_catalog import pipeline as pc
 
 
 class ProjectHooks:
@@ -50,9 +51,11 @@ class ProjectHooks:
         """
         de_pipeline = de.create_pipeline()
         ds_pipeline = ds.create_pipeline()
+        print_catalog_pipeline = pc.create_pipeline()
         return {
             "de": de_pipeline,
             "ds": ds_pipeline,
+            "pc": print_catalog_pipeline,
             "__default__": de_pipeline + ds_pipeline,
         }
 
