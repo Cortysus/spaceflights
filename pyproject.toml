@@ -16,6 +16,8 @@ ipython = "^7.19.0"
 pandas = "^1.2.1"
 xlrd = "^2.0.1"
 openpyxl = "^3.0.6"
+scikit-learn = "^0.24.1"
+kedro-viz = "^3.8.1"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^3.8.4"
