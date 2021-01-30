@@ -45,6 +45,7 @@ class ProjectHooks:
             A mapping from a pipeline name to a ``Pipeline`` object.
 
         """
+
         return {"__default__": Pipeline([])}
 
     @hook_impl
@@ -63,6 +64,3 @@ class ProjectHooks:
         return DataCatalog.from_config(
             catalog, credentials, load_versions, save_version, journal
         )
-
-
-project_hooks = ProjectHooks()

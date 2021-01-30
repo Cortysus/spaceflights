@@ -1,3 +1,8 @@
+[tool.kedro]
+package_name = "spaceflights"
+project_name = "spaceflights"
+project_version = "0.17.0"
+
 [tool.poetry]
 name = "spaceflights"
 version = "0.1.0"
